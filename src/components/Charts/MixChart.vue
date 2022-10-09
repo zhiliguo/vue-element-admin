@@ -47,14 +47,14 @@ export default {
       const xData = (function() {
         const data = []
         for (let i = 1; i < 13; i++) {
-          data.push(i + 'month')
+          data.push(i + '' + '月')
         }
         return data
       }())
       this.chart.setOption({
         backgroundColor: '#344b58',
         title: {
-          text: 'statistics',
+          text: 'Financial Balance',
           x: '20',
           top: '20',
           textStyle: {
@@ -90,7 +90,7 @@ export default {
           textStyle: {
             color: '#90979c'
           },
-          data: ['female', 'male', 'average']
+          data: ['Spent', 'Income', 'Target']
         },
         calculable: true,
         xAxis: [{
@@ -162,7 +162,7 @@ export default {
           end: 35
         }],
         series: [{
-          name: 'female',
+          name: 'Spent',
           type: 'bar',
           stack: 'total',
           barMaxWidth: 35,
@@ -199,7 +199,7 @@ export default {
         },
 
         {
-          name: 'male',
+          name: 'Income',
           type: 'bar',
           stack: 'total',
           itemStyle: {
@@ -230,7 +230,7 @@ export default {
             220
           ]
         }, {
-          name: 'average',
+          name: 'Target',
           type: 'line',
           stack: 'total',
           symbolSize: 10,

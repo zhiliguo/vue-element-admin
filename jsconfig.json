@@ -1,5 +1,7 @@
 { 
   "compilerOptions": {
+    "experimentalDisableTemplateSupport": true,
+    "jsx": "preserve"
     "baseUrl": "./",
     "paths": {
         "@/*": ["src/*"]
